@@ -12,7 +12,6 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        setSupportActionBar(findViewById(R.id.toolBar))
         val bottomNavigationView=findViewById<BottomNavigationView>(R.id.bottomNavigationView)
         val appBarConfiguration= AppBarConfiguration(setOf(R.layout.fragment_home,R.layout.fragment_cart,R.layout.fragment_profile))
         val navController =findNavController(R.id.fragment)
